@@ -1,10 +1,12 @@
+import comments from "./comments";
+
 const posts = [
     {
         id : "1",
         createdAt : "14 April,2023",
         image : "https://wallpapers.com/images/hd/mumbai-indians-rohit-sharma-returns-poster-vnshkgnmv2orr0fl.jpg",
         description : "RO-HITMAN SHARMA back to his class with wonderful knock of 65(35 balls) against Delhi Captitals which seals our first victory in IPL 2023..♥️❣️",
-        noOfComments : 50,
+        noOfComments : comments.length,
         noOfLikes : 100,
         user : {
             name : "mumbaiindians",

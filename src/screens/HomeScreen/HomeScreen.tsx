@@ -4,6 +4,7 @@ import {
   SafeAreaView,
   ViewabilityConfig,
   ViewToken,
+  Platform,
 } from 'react-native';
 import React, { useRef, useState } from 'react';
 import { FlatList } from 'react-native';
@@ -24,7 +25,7 @@ const HomeScreen = () => {
     }
   );
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{ paddingTop: Platform.OS === 'ios' ? 0 : 30 }}>
       <FlatList
         data={posts}
         renderItem={({ item }) => {
